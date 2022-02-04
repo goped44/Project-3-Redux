@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 Redux</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+
+    <div class="navbar">
+        <img src="logo3.png" class="logo">
+            <nav id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+                <a href="https://youtube.com"><button class="button">Sign Up</button></a>
+            </nav>
+    </div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+
+
+    <div class="row">
+        <div class="col-1">
+            <h2>Our basic thesis for bitcoin<br> is that it is better than gold.</h2><br>
+            <p class="text">Contrary to popular belief, Lorem Ipsum is not simply random<br> text. 
+            It has roots in a piece of classical latin literature from 45 BC,<br> making it over 2000 years old.</p>
+            <a class="learn-button" href="https://apple.com"><img src="play-button.png" class="gay"></a>
+             <p class="learn">LEARN MORE</p>
+        </div>
+     </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        } 
+    </script>
+
+</body>
+</html>
